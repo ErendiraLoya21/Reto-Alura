@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+}
+
+body{
+    background: #f4f4fc;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+}
+
+.logo{   
+width: 8%;
+left: 44px;
+top: 100px;
+border-radius: 0px;
+}
+
+main{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedorcajatexto{
+    position: absolute;
+    left: 200px;
+    top: 1px;
+    padding-left: 100px;
+    width: 700px;
+    height: 500px;/*para abajo*/
+}
+
+.cajatexto{
+    width: 80%;
+    height: 100%;
+    border: none;
+    background: #f4f4fc;
+    cursor: pointer;
+    color: #0A3871;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: "Inter";
+}
+.cajatexto:focus,
+.cajatexto:active{
+    border: none;
+    outline: none;
+}
+
+.cajatexto::placeholder{
+    color: #0A3871;
+}
+
+.alerta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0%;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 80%;
+}
+
+.contenedor-botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 82%;
+}
+
+.btn-encriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background: #0A3871;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Inter";
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.btn-desencriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background: #D8DFE8;
+    color:#0A3871;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Inter";
+    border: none;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+}
+
+.seccion2{
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 660px;
+    right: 200px;
+    padding-right: 20px;
+    background-color: #ffff;
+    box-sizing: border-box;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+}
+
+.contenedormunieco{
+    position: absolute;
+    left: 30px;
+    top: 70px;
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+
+.contenedor-parrafo{
+    position: absolute;
+    box-sizing: border-box;
+    top: 440px;
+    left: 85px;
+}
+
+.contenedor-parrafo h3{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Inter";
+    text-align: center;
+    color: #343A40;
+}
+
+.contenedor-parrafo p{
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #495057;
+    padding-top: 200px;
+}
+
+
+
+.contenedor-res p{
+    color: #495057;
+    font-size: 25px;
+    width: 200px;
+    height: max-content;
+}
+
+.contenedor-copiar{
+    display: flex;
+    position: absolute;
+    bottom: 400px;
+    top: 700px;
+    background-color: aqua;
+    padding-left: 40px;
+}
+
+.btn-copiar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background: white;
+    color: #0A3871;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Inter";
+    border: 1px solid #0A3871;
+    cursor: pointer;
+    position: relative;
+    bottom: 120px;
+}
+
+.ocultar{
+    display: none;
+}
+
+@media (max-width:57.5em){
+    .seccion1{
+        display: flex;
+        flex-direction: row;
+    }
+    .contenedorcajatexto{
+        width: 100%;
+    }
+    .cajatexto{
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%;
+    }
+    .alerta{
+        width: 80%;
+        left: 10%;
+        top: 67%;
+    }
+    .alerta p{
+        font-size: 16px;
+    }
+    .contenedor-botones{
+        width: 80%;
+        left: 10%;
+        top:70%
+    }
+    .btn-encriptar, 
+    .btn-desencriptar,
+    .btn-copiar{
+        width: 48%;
+        border-radius: 16px;
+    }
+    .btn-encriptar:hover,
+    .btn-desencriptar:hover,
+    .btn-copiar:hover{
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+    }
+    .contenedor-parrafo{
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 80%;
+    }
+    .mensaje-encriptado{
+        width: 100%;
+        top:5%;
+    }
+    .contenedormunieco{
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+
+}
